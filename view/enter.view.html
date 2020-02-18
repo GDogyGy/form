@@ -1,0 +1,8 @@
+<h2><?=$in;?></h2>
+<div class="error_message"></div>
+<form id="enter_form" class="form_js" method="post" onsubmit="validate(event,'<?=$_SESSION["USER_LANGUAGE"]."_error";?>');"   action="../web/auth.php" ENCTYPE="multipart/form-data">
+        <input type="text" name="login" placeholder="<?=$name_lang;?>">
+        <input type="password" name="password" placeholder="<?=$password_lang;?>">
+
+        <input  value="<?=$send_button_lang;?>" type="submit">
+</form>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background: #fece0c;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(254,236,164,1);
+}
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+}
+
+.wrapper input{
+    margin-bottom: 10px;
+}
+input[type="file"]{margin-top: 20px;}
+.wrapper  input[type="text"],.wrapper  input[type="email"],.wrapper  input[type="password"],
+.wrapper textarea{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+    height: 45px;
+}
+
+.wrapper textarea{
+    resize: none;
+    height: 80px;
+}
+
+.wrapper  input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #fece0c;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.error_message{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    line-height: 25px;
+    white-space: normal;
+    word-break: break-word;
+    padding: 0 12px;
+}
+.enter_button{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.auth_successfully{
+    display: flex;
+    flex-direction: column;
+}
+.auth_successfully>p{
+    margin-bottom: 8px;
+}
+.auth_successfully img{
+       max-width: 100%;
+}
+.enter_button a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.separete{
+    color: #fece0c;
+}
+#language span{font-weight: bold;cursor: pointer;    font-size: 15px;transition: all 0.5s ease;}
+#language span:hover{    font-size: 18px;}
+#language span:nth-child(2):hover{font-size: 15px;}
+#language {
+    position: absolute;
+    right: -85px;
+    top: 15px;
+}
+#language .separete{
+    color: #000;
+}
+.enter_button a:hover{
+    text-decoration: underline;
+    color: #fece0c;
+    transition: all 0.5s ease;
+}
